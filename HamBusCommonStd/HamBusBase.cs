@@ -12,18 +12,6 @@ namespace HamBusCommonStd.Model
     }
     public long SerialNumDym { get; set; }
 
-    //public override string ToString()
-    //{
-    //  var options = new JsonSerializerOptions
-    //  {
-    //    //PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-    //    WriteIndented = true
-    //  };
-
-    //  string output = JsonSerializer.Serialize(this, options);
-    //  Console.WriteLine($"ToString output: {output}");
-    //  return output;
-    //}
     public virtual void IncSerial()
     {
       SerialNum_++;
