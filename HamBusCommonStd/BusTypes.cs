@@ -1,6 +1,6 @@
 ﻿
 
-namespace HamBusCommmonStd
+namespace HamBusCommonStd
 {
   public enum BusType { Unknown = 0, BusMaster, RigBus, VirtualRigBus, LogBus, RotoBus, ClusterBus, UI }
   public class BusMasterGroups

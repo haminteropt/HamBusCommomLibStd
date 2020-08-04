@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using HamBusCommmonStd;
+using HamBusCommonStd;
 using HamBusCommonStd.Model;
 
 namespace HamBusCommonStd

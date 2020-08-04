@@ -1,7 +1,7 @@
 ﻿using System;
 using HamBusCommonStd.Model;
 
-namespace HamBusCommmonStd
+namespace HamBusCommonStd
 
 {
   public class RigState : HamBusBase

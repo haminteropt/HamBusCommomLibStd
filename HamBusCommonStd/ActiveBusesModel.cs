@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using HamBusCommmonStd;
 using HamBusCommonStd.Model;
 
-namespace HamBusCommmonStd
+namespace HamBusCommonStd
 {
   public class ActiveBusesModel : HamBusBase
   {
