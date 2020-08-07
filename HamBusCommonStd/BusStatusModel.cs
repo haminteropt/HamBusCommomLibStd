@@ -9,6 +9,6 @@ namespace HamBusCommonStd
 
     public string Name { get; set; }
     public ActiveBusesModel ActiveBus { get; set; }
-    public RigState State { get; set; }
+    public RigState State { get; set; } = new RigState();
   }
 }
