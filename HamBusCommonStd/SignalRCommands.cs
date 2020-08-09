@@ -7,6 +7,7 @@ namespace HamBusCommonStd
     public readonly static string ErrorReport = "ErrorReport";
     public readonly static string InfoPacket = "InfoPacket";
     public readonly static string LockRig = "LockRig";
+    public readonly static string Login = "Login";
     public readonly static string LockRigAck = "LockRigAck";
     public readonly static string ReceiveConfiguration = "ReceiveConfiguration";
     public readonly static string State = "state";
