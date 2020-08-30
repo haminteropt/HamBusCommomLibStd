@@ -1,18 +1,29 @@
 ﻿
+using System.ComponentModel.DataAnnotations;
+
 namespace HamBusCommonStd
 {
   public class RigConf : BusConfigBase
   {
     public RigConf() { }
-    public string name { get; set; }
-    public string commPortName { get; set; }
-    public int baudRate { get; set; } = 9600;
-    public string parity { get; set; } = "none";
-    public int dataBits { get; set; } = 8;
-    public string stopBits { get; set; } = "one";
+    [Required]
+    public BusType RigType { set; get; } = BusType.RigBus;
+    [Required]
+    public string Name { get; set; }
+    [Required]
+    public string CommPortName { get; set; }
+    [Required]
+    public int BaudRate { get; set; } = 9600;
+    [Required]
+    public string Parity { get; set; } = "";
+    [Required]
+    public int DataBits { get; set; } = 8;
+    [Required]
+    public string StopBits { get; set; } = "none";
     // TODO do string handshake codes
-    public string handshake { get; set; } = "none";
-    public int? readTimeout { get; set; }
-    public int? writeTimeout { get; set; } = null;
+      [Required]
+    public string Handshake { get; set; } = "none";
+    public int? ReadTimeout { get; set; }
+    public int? WriteTimeout { get; set; } = null;
   }
 }

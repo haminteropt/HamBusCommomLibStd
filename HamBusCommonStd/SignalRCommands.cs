@@ -10,6 +10,7 @@ namespace HamBusCommonStd
     public readonly static string Login = "Login";
     public readonly static string LockRigAck = "LockRigAck";
     public readonly static string ReceiveConfiguration = "ReceiveConfiguration";
+    public readonly static string SaveConfiguration = "SaveConfiguration";
     public readonly static string State = "state";
     public readonly static string ActiveUpdate = "ActiveUpdate";
   }
