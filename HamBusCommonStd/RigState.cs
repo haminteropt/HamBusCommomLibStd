@@ -10,7 +10,7 @@ namespace HamBusCommonStd
 
     private bool dirty_;
 
-    public bool dirty
+    public bool Dirty
     {
       get { return dirty_; }
       set
@@ -29,7 +29,7 @@ namespace HamBusCommonStd
         if (!string.Equals(Name_, value))
         {
           Name_ = value;
-          dirty = true;
+          Dirty = true;
         }
       }
     }
@@ -44,7 +44,7 @@ namespace HamBusCommonStd
         if (Freq_ != value)
         {
           Freq_ = value;
-          dirty = true;
+          Dirty = true;
         }
       }
     }
@@ -59,7 +59,7 @@ namespace HamBusCommonStd
         if (_freqA != value)
         {
           _freqA = value;
-          dirty = true;
+          Dirty = true;
         }
       }
     }
@@ -73,7 +73,7 @@ namespace HamBusCommonStd
         if (value != _freqB)
         {
           _freqB = value;
-          dirty = true;
+          Dirty = true;
         }
       }
     }
@@ -87,7 +87,7 @@ namespace HamBusCommonStd
       {
         if (!String.Equals(Mode, value))
         {
-          dirty = true;
+          Dirty = true;
           mode_ = value;
         }
       }
@@ -102,7 +102,7 @@ namespace HamBusCommonStd
       {
         if (value != pitch_)
         {
-          dirty = true;
+          Dirty = true;
           pitch_ = value;
         }
       }
@@ -117,7 +117,7 @@ namespace HamBusCommonStd
       {
         if (!string.Equals(value, rigType_))
         {
-          dirty = true;
+          Dirty = true;
           rigType_ = value;
         }
       }
@@ -132,7 +132,7 @@ namespace HamBusCommonStd
       {
         if (!string.Equals(rit_, value))
         {
-          dirty = true;
+          Dirty = true;
           rit_ = value;
         }
       }
@@ -146,7 +146,7 @@ namespace HamBusCommonStd
       {
         if (ritOffset_ != value)
         {
-          dirty = true;
+          Dirty = true;
           ritOffset_ = value;
         }
       }
@@ -161,7 +161,7 @@ namespace HamBusCommonStd
       {
         if (!string.Equals(value, status_))
         {
-          dirty = true;
+          Dirty = true;
           status_ = value;
         }
       }
@@ -176,7 +176,7 @@ namespace HamBusCommonStd
       {
         if (!string.Equals(value, statusStr_))
         {
-          dirty = true;
+          Dirty = true;
           statusStr_ = value;
         }
       }
@@ -191,7 +191,7 @@ namespace HamBusCommonStd
       {
         if (!string.Equals(split_, value))
         {
-          dirty = true;
+          Dirty = true;
           split_ = value;
         }
       }
@@ -206,7 +206,7 @@ namespace HamBusCommonStd
       {
         if (value != tx_)
         {
-          dirty = true;
+          Dirty = true;
           tx_ = value;
         }
       }
@@ -221,7 +221,7 @@ namespace HamBusCommonStd
       {
         if (!string.Equals(value, vfo_))
         {
-          dirty = true;
+          Dirty = true;
           vfo_ = value;
         }
       }
@@ -235,7 +235,7 @@ namespace HamBusCommonStd
       {
         if (!string.Equals(value, xit_))
         {
-          dirty = true;
+          Dirty = true;
           xit_ = value;
         }
       }
@@ -243,11 +243,11 @@ namespace HamBusCommonStd
 
     public bool IsDirty()
     {
-      return dirty;
+      return Dirty;
     }
     public void ClearDirty()
     {
-      dirty = false;
+      Dirty = false;
     }
 
 
